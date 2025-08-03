@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeOnBudget - Style Like a Star Without the Price Tag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>VibeOnBudget</h1>
+                    <span class="header__tagline">Style Without the Splurge</span>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav__link nav__link--active">Home</a>
+                    <a href="#celebrity-dupes" class="nav__link">Celebrity Dupes</a>
+                    <a href="#fashion" class="nav__link">Fashion Finds</a>
+                    <a href="#home-essentials" class="nav__link">Home Essentials</a>
+                    <a href="#blog" class="nav__link">Blog</a>
+                </nav>
+                <div class="header__actions">
+                    <button class="btn btn--outline btn--sm pinterest-btn">
+                        📌 Pinterest
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Style on a Budget - Look Like a Star Without the Price Tag</h2>
+                    <p class="hero__subtitle">Discover celebrity-inspired looks, budget fashion finds, and affordable home essentials that won't break the bank.</p>
+                    <div class="hero__actions">
+                        <button class="btn btn--primary btn--lg" onclick="scrollToSection('celebrity-dupes')">Shop Celebrity Dupes</button>
+                        <button class="btn btn--outline btn--lg" onclick="scrollToSection('pinterest')">Browse Pinterest Picks</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section__title">Shop by Category</h2>
+                <div class="categories__grid">
+                    <div class="category-card" onclick="scrollToSection('celebrity-dupes')">
+                        <div class="category-card__content">
+                            <h3>Celebrity Inspired Outfits</h3>
+                            <p>Get the celebrity look for less</p>
+                            <span class="category-card__cta">Shop Now →</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="scrollToSection('fashion')">
+                        <div class="category-card__content">
+                            <h3>Budget Fashion Finds</h3>
+                            <p>Trending styles under $50</p>
+                            <span class="category-card__cta">Explore →</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="scrollToSection('home-essentials')">
+                        <div class="category-card__content">
+                            <h3>Home Essentials Under $50</h3>
+                            <p>Transform your space affordably</p>
+                            <span class="category-card__cta">Discover →</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="scrollToSection('pinterest')">
+                        <div class="category-card__content">
+                            <h3>Pinterest Favorites</h3>
+                            <p>Curated inspiration board</p>
+                            <span class="category-card__cta">Browse →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Celebrity Dupes Section -->
+        <section id="celebrity-dupes" class="celebrity-dupes">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Celebrity Dupes</h2>
+                    <p class="section__subtitle">Recreate your favorite celebrity looks for a fraction of the cost</p>
+                </div>
+                <div class="celebrity-grid" id="celebrity-grid">
+                    <!-- Celebrity items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Section -->
+        <section id="fashion" class="fashion">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Fashion Finds</h2>
+                    <p class="section__subtitle">Curated budget-friendly fashion essentials</p>
+                </div>
+                <div class="product-grid" id="fashion-grid">
+                    <!-- Fashion products will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Essentials Section -->
+        <section id="home-essentials" class="home-essentials">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Home Essentials</h2>
+                    <p class="section__subtitle">Easy-to-install home improvement items under $50</p>
+                </div>
+                <div class="product-grid" id="home-grid">
+                    <!-- Home products will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pinterest Inspiration -->
+        <section id="pinterest" class="pinterest">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Pinterest Inspiration</h2>
+                    <p class="section__subtitle">Click any item to shop the look</p>
+                </div>
+                <div class="pinterest-grid" id="pinterest-grid">
+                    <!-- Pinterest items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Latest Blog Posts</h2>
+                    <p class="section__subtitle">Style tips, home decor ideas, and budget shopping guides</p>
+                </div>
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog posts will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter__content">
+                    <h2 class="newsletter__title">Never Miss a Deal</h2>
+                    <p class="newsletter__subtitle">Get the latest budget finds and celebrity dupes delivered to your inbox</p>
+                    <form class="newsletter__form">
+                        <input type="email" class="form-control newsletter__input" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter__disclaimer">We respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>VibeOnBudget</h3>
+                    <p>Style on a budget, look like a star without the price tag.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Shop</h4>
+                        <a href="#celebrity-dupes">Celebrity Dupes</a>
+                        <a href="#fashion">Fashion Finds</a>
+                        <a href="#home-essentials">Home Essentials</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__disclaimer">
+                    <strong>Affiliate Disclosure:</strong> VibeOnBudget.com contains affiliate links. When you click and purchase through these links, we may earn a commission at no additional cost to you. We only recommend products we genuinely love and believe will add value to your budget-conscious lifestyle.
+                </p>
+                <p class="footer__copyright">© 2025 VibeOnBudget.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pinterest Modal -->
+    <div id="pinterest-modal" class="modal hidden">
+        <div class="modal__overlay" onclick="closePinterestModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closePinterestModal()">×</button>
+            <div class="modal__body" id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
